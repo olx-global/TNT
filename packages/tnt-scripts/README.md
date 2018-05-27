@@ -1,6 +1,6 @@
 # tnt-scripts
 
-This package includes scripts and configuration used by [TNT](https://github.com/naspersclassifieds-regional/the-node-tool).<br>
+This package includes scripts and configuration used by [TNT](https://github.com/olx-global/TNT).<br>
 
 ## Commands
 
