@@ -15,7 +15,7 @@ module.exports = {
   appSrc: resolveApp('src'),
   appPackageJson: resolveApp('package.json'),
   appIndexJs: resolveApp('src/index.js'),
-  appBuildJs: resolveApp('app.js'),
+  appBuildJs: resolveApp('build/app.js'),
   appBabelRc: resolveApp('.babelrc'),
   appEslintRc: resolveApp('.eslintrc'),
   ownPath: resolveOwn('.'),
