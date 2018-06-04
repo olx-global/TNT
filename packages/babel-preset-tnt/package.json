@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-tnt",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "Babel preset used by TNT",
   "repository": "naspersclassifieds-regional/the-node-tool",
   "license": "MIT",
