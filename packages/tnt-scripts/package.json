@@ -1,6 +1,6 @@
 {
   "name": "tnt-scripts",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Configuration and scripts for TNT apps",
   "keywords": [],
   "bin": {
@@ -16,7 +16,7 @@
     "babel-core": "6.26.3",
     "babel-eslint": "8.2.3",
     "babel-jest": "23.0.1",
-    "babel-preset-tnt": "1.0.0",
+    "babel-preset-tnt": "0.1.1",
     "chalk": "2.4.1",
     "cross-spawn": "6.0.5",
     "jest-cli": "23.1.0",
