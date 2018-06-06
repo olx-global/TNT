@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/olx-global/tnt.git"
+    "url": "git+https://github.com/olx-global/TNT.git"
   },
   "engines": {
     "node": ">=8"
