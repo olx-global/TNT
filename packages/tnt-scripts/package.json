@@ -1,6 +1,6 @@
 {
   "name": "tnt-scripts",
-  "version": "1.0.0",
+  "version": "0.2.5",
   "description": "Configuration and scripts for TNT apps",
   "keywords": [],
   "bin": {
