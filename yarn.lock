@@ -628,7 +628,7 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-jest@^23.0.1:
+babel-jest@23.0.1, babel-jest@^23.0.1:
   version "23.0.1"
   resolved "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm/babel-jest/-/babel-jest-23.0.1.tgz?dl=https://registry.yarnpkg.com/babel-jest/-/babel-jest-23.0.1.tgz#bbad3bf523fb202da05ed0a6540b48c84eed13a6"
   dependencies:
@@ -913,6 +913,12 @@ babel-plugin-transform-regenerator@^6.22.0:
   dependencies:
     regenerator-transform "^0.10.0"
 
+babel-plugin-transform-runtime@6.23.0:
+  version "6.23.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm/babel-plugin-transform-runtime/-/babel-plugin-transform-runtime-6.23.0.tgz?dl=https://registry.yarnpkg.com/babel-plugin-transform-runtime/-/babel-plugin-transform-runtime-6.23.0.tgz#88490d446502ea9b8e7efb0fe09ec4d99479b1ee"
+  dependencies:
+    babel-runtime "^6.22.0"
+
 babel-plugin-transform-strict-mode@^6.24.1:
   version "6.24.1"
   resolved "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm/babel-plugin-transform-strict-mode/-/babel-plugin-transform-strict-mode-6.24.1.tgz?dl=https://registry.yarnpkg.com/babel-plugin-transform-strict-mode/-/babel-plugin-transform-strict-mode-6.24.1.tgz#d5faf7aa578a65bbe591cf5edae04a0c67020758"
@@ -969,17 +975,6 @@ babel-preset-jest@^23.0.1:
   dependencies:
     babel-plugin-jest-hoist "^23.0.1"
     babel-plugin-syntax-object-rest-spread "^6.13.0"
-
-babel-preset-tnt@1.0.0:
-  version "0.1.1"
-  dependencies:
-    babel-plugin-dynamic-import-node "1.2.0"
-    babel-plugin-external-helpers "6.22.0"
-    babel-plugin-syntax-dynamic-import "6.18.0"
-    babel-plugin-transform-class-properties "6.24.1"
-    babel-plugin-transform-flow-strip-types "6.22.0"
-    babel-plugin-transform-object-rest-spread "6.26.0"
-    babel-preset-env "1.7.0"
 
 babel-register@^6.26.0:
   version "6.26.0"
@@ -3155,7 +3150,7 @@ jest-changed-files@^23.0.1:
   dependencies:
     throat "^4.0.0"
 
-jest-cli@^23.1.0:
+jest-cli@23.1.0:
   version "23.1.0"
   resolved "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm/jest-cli/-/jest-cli-23.1.0.tgz?dl=https://registry.yarnpkg.com/jest-cli/-/jest-cli-23.1.0.tgz#eb8bdd4ce0d15250892e31ad9b69bc99d2a8f6bf"
   dependencies:
@@ -4492,9 +4487,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm/preserve/-/preserve-0.2.0.tgz?dl=https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@1.13.3:
-  version "1.13.3"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm/prettier/-/prettier-1.13.3.tgz?dl=https://registry.yarnpkg.com/prettier/-/prettier-1.13.3.tgz#e74c09a7df6519d472ca6febaa37cf7addb48a20"
+prettier@1.13.4:
+  version "1.13.4"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm/prettier/-/prettier-1.13.4.tgz?dl=https://registry.yarnpkg.com/prettier/-/prettier-1.13.4.tgz#31bbae6990f13b1093187c731766a14036fa72e6"
 
 pretty-format@^23.0.1:
   version "23.0.1"
@@ -4959,9 +4954,9 @@ rollup-pluginutils@^2.0.1:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
 
-rollup@0.59.4:
-  version "0.59.4"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm/rollup/-/rollup-0.59.4.tgz?dl=https://registry.yarnpkg.com/rollup/-/rollup-0.59.4.tgz#6f80f7017c22667ff1bf3e62adf8624a44cc44aa"
+rollup@0.60.0:
+  version "0.60.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm/rollup/-/rollup-0.60.0.tgz?dl=https://registry.yarnpkg.com/rollup/-/rollup-0.60.0.tgz#2c4acaaf3d8a858a81ff740d6253e21eeb58ff21"
   dependencies:
     "@types/estree" "0.0.39"
     "@types/node" "*"
