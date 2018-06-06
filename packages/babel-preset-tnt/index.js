@@ -2,14 +2,14 @@
 const plugins = [
   require.resolve('babel-plugin-external-helpers'),
   require.resolve('babel-plugin-transform-flow-strip-types'),
-  /*[
+  [
     require.resolve('babel-plugin-transform-runtime'),
     {
       helpers: true,
       polyfill: false,
       regenerator: false
     }
-  ],*/
+  ],
   // The following two plugins use Object.assign directly, instead of Babel's
   // extends helper. Note that this assumes `Object.assign` is available.
   // { ...todo, completed: true }

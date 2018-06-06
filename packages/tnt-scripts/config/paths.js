@@ -18,6 +18,7 @@ module.exports = {
   appBuildJs: resolveApp('build/app.js'),
   appBabelRc: resolveApp('.babelrc'),
   appEslintRc: resolveApp('.eslintrc'),
+  appJestConfigFile: resolveApp('jest.config.js'),
   ownPath: resolveOwn('.'),
   ownNodeModules: resolveOwn('node_modules')
 }

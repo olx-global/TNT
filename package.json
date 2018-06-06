@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/naspersclassifieds-regional/the-node-tool.git"
+    "url": "git+https://github.com/olx-global/tnt.git"
   },
   "engines": {
     "node": ">=8"
