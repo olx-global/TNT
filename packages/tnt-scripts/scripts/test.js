@@ -1,4 +1,4 @@
-/* eslint-disable no-sync */
+/* eslint-disable no-sync, no-process-exit */
 
 process.env.BABEL_ENV = 'test'
 process.env.NODE_ENV = 'test'
@@ -59,4 +59,7 @@ if (hasJestConfigFile) {
   jestConfig = { ...jestConfig, ...externalJestConfig }
 }
 
-runCLI(jestConfig, [paths.appPath])
+runCLI(jestConfig, [paths.appPath]).then(({ results }) => {
+  const exitStatus = results.success ? 0 : 1
+  process.exit(exitStatus)
+})
