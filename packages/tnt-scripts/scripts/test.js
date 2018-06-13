@@ -36,6 +36,10 @@ const argv = require('yargs')
     default: false,
     type: 'boolean'
   })
+  .option('testNamePattern', {
+    alias: 't',
+    describe: 'Run only tests with a name that matches the regex.'
+  })
   .help()
   .argv
 
@@ -44,6 +48,7 @@ const baseJestConfig = {
   verbose: argv.verbose,
   coverage: argv.coverage,
   runInBand: argv.sequential,
+  testNamePattern: argv.testNamePattern,
   coverageReporters: ['html', 'lcov', 'text'],
   preset: './node_modules/tnt-scripts/config/jest-preset.js',
   collectCoverageFrom: ['src/**/*.js', 'src/**/*.flow'],

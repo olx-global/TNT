@@ -41,4 +41,4 @@ Please also provide a **test plan**, i.e. specify how you verified that your add
 
 ## License
 
-Create React App is open source software [licensed as MIT](https://github.com/olx-global/TNT/master/LICENSE).
+TNT is open source software [licensed as MIT](https://github.com/olx-global/TNT/master/LICENSE).
