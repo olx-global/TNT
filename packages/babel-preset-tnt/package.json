@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-tnt",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Babel preset used by TNT",
   "license": "MIT",
   "files": [
