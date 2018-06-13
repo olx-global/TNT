@@ -1,4 +1,4 @@
-/* eslint-disable no-sync */
+/* eslint-disable no-sync, no-undefined */
 
 const babel = require('rollup-plugin-babel')
 const commonjs = require('rollup-plugin-commonjs')
@@ -6,7 +6,7 @@ const fs = require('fs')
 const resolve = require('rollup-plugin-node-resolve')
 const paths = require('./paths')
 
-module.exports = () => {
+module.exports = (sourcemap = true) => {
   const hasBabelRc = fs.existsSync(paths.appBabelRc);
 
   let babelPresets = ['tnt']
@@ -24,7 +24,7 @@ module.exports = () => {
     output: {
       file: paths.appBuildJs,
       format: 'cjs',
-      sourcemap: 'inline'
+      sourcemap: sourcemap ? 'inline' : undefined
     },
     plugins: [
       babel({
