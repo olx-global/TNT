@@ -11,12 +11,19 @@
     "index.js"
   ],
   "dependencies": {
-    "babel-plugin-dynamic-import-node": "1.2.0",
-    "babel-plugin-external-helpers": "6.22.0",
-    "babel-plugin-syntax-dynamic-import": "6.18.0",
-    "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-flow-strip-types": "6.22.0",
-    "babel-plugin-transform-object-rest-spread": "6.26.0",
-    "babel-preset-env": "1.7.0"
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-external-helpers": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-destructuring": "^7.1.2",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/runtime": "^7.1.2",
+    "babel-plugin-macros": "^2.4.2",
+    "babel-plugin-transform-dynamic-import": "^2.1.0"
   }
 }
