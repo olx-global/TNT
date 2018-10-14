@@ -6,16 +6,16 @@ Tool for NodeJS and FlowTyped based Microservices
 
 Your environment will have everything you need to build a modern microservice app:
 
-* ES6, and Flow syntax support.
-* Language extras beyond ES6 like the object spread operator.
-* A fast interactive unit test runner with built-in support for coverage reporting.
-* A live development server that warns about common mistakes.
-* Hassle-free updates for the above tools with a single dependency.
-
+- ES6, and Flow syntax support.
+- Language extras beyond ES6 like the object spread operator.
+- A fast interactive unit test runner with built-in support for coverage reporting.
+- A live development server that warns about common mistakes.
+- Hassle-free updates for the above tools with a single dependency.
 
 ### Get Started Immediately
 
 `package.json`
+
 ```
 {
   "name": "app",
@@ -41,4 +41,4 @@ Please also provide a **test plan**, i.e. specify how you verified that your add
 
 ## License
 
-Create React App is open source software [licensed as MIT](https://github.com/olx-global/TNT/master/LICENSE).
+TNT is open source software [licensed as MIT](https://github.com/olx-global/TNT/master/LICENSE).

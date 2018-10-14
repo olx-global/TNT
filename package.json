@@ -8,22 +8,22 @@
     "lint": "eslint packages/**/*.js"
   },
   "devDependencies": {
-    "@commitlint/cli": "7.2.0",
-    "@commitlint/config-conventional": "7.1.2",
-    "eslint": "5.6.1",
+    "@commitlint/cli": "^7.2.0",
+    "@commitlint/config-conventional": "^7.1.2",
+    "eslint": "^5.7.0",
     "eslint-config-olx": "olx-global/olx-eslint-config#v2.0.0",
-    "eslint-config-prettier": "3.1.0",
-    "husky": "1.1.1",
-    "lerna": "3.4.1",
-    "lerna-changelog": "0.8.0",
-    "prettier": "1.14.3",
-    "pretty-quick": "1.7.0"
+    "eslint-config-prettier": "^3.1.0",
+    "husky": "^1.1.1",
+    "lerna": "^3.4.1",
+    "lerna-changelog": "^0.8.0",
+    "prettier": "^1.14.3",
+    "pretty-quick": "^1.7.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/naspersclassifieds-regional/the-node-tool.git"
+    "url": "git+https://github.com/olx-global/TNT.git"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   }
 }

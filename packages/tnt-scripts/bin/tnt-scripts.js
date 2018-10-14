@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* eslint-disable no-console, no-process-exit */
+/* eslint-disable no-console, no-process-exit, no-fallthrough */
 
 // Makes the script crash on unhandled rejections instead of silently
 // ignoring them. In the future, promise rejections that are not handled will
@@ -11,19 +11,23 @@ process.on('unhandledRejection', err => {
 const spawn = require('cross-spawn')
 const args = process.argv.slice(2)
 
-const scriptIndex =
-  args.findIndex(x => x === 'build' || x === 'start' || x === 'format' || x === 'lint' || x === 'test')
+const scriptIndex = args.findIndex(
+  x => x === 'build' || x === 'start' || x === 'format' || x === 'lint' || x === 'test'
+)
 const script = scriptIndex === -1 ? args[0] : args[scriptIndex]
 const nodeArgs = scriptIndex > 0 ? args.slice(0, scriptIndex) : []
 
 console.log('------------------------')
 
 switch (script) {
+  case 'test':
+    if (nodeArgs.includes('--inspect-brk') || nodeArgs.includes('--inspect')) {
+      args.push('--sequential')
+    }
   case 'build':
   case 'start':
   case 'format':
-  case 'lint':
-  case 'test': {
+  case 'lint': {
     const result = spawn.sync(
       'node',
       nodeArgs.concat(require.resolve(`../scripts/${script}`)).concat(args.slice(scriptIndex + 1)),
