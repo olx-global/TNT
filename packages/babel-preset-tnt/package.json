@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-tnt",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Babel preset used by TNT",
   "repository": "olx-global/tnt",
   "license": "MIT",
