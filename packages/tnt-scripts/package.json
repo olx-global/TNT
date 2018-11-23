@@ -1,6 +1,7 @@
 {
   "name": "tnt-scripts",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "private": false,
   "description": "Configuration and scripts for TNT apps",
   "keywords": [],
   "bin": {
@@ -27,5 +28,8 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "yargs": "11.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "publishConfig": {
+    "registry": "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm-local/"
+  }
 }
