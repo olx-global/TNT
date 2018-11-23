@@ -1,6 +1,7 @@
 /* eslint-disable no-sync, no-undefined */
 
 const babel = require('rollup-plugin-babel')
+const json = require('rollup-plugin-json')
 const commonjs = require('rollup-plugin-commonjs')
 const fs = require('fs')
 const resolve = require('rollup-plugin-node-resolve')
@@ -27,6 +28,7 @@ module.exports = (sourcemap = true) => {
       sourcemap: sourcemap ? 'inline' : undefined
     },
     plugins: [
+      json(),
       babel({
         exclude: 'node_modules/**', // only transpile our source code
         presets: babelPresets,
