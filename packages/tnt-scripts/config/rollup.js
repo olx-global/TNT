@@ -1,13 +1,14 @@
 /* eslint-disable no-sync, no-undefined */
 
 const babel = require('rollup-plugin-babel')
+const json = require('rollup-plugin-json')
 const commonjs = require('rollup-plugin-commonjs')
 const fs = require('fs')
 const resolve = require('rollup-plugin-node-resolve')
 const paths = require('./paths')
 
 module.exports = (sourcemap = true) => {
-  const hasBabelRc = fs.existsSync(paths.appBabelRc);
+  const hasBabelRc = fs.existsSync(paths.appBabelRc)
 
   let babelPresets = ['tnt']
   let babelPlugins = []
@@ -27,6 +28,7 @@ module.exports = (sourcemap = true) => {
       sourcemap: sourcemap ? 'inline' : undefined
     },
     plugins: [
+      json(),
       babel({
         exclude: 'node_modules/**', // only transpile our source code
         presets: babelPresets,
@@ -39,6 +41,6 @@ module.exports = (sourcemap = true) => {
       commonjs()
     ],
     // Temporal fix to https://github.com/rollup/rollup-plugin-node-resolve/issues/77
-    external: id => (/^\w[\w-/]+$/).test(id)
+    external: id => /^\w[\w-/]+$/.test(id)
   }
 }
