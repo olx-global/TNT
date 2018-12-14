@@ -1,24 +1,26 @@
 {
   "private": true,
-  "version": "0.2.8",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "changelog": "lerna-changelog",
-    "lint": "eslint packages/**/*.js"
+    "lint": "lerna run lint",
+    "publish-packages": "lerna publish --force-publish --npm-client=npm --no-verify-access",
+    "check-packages": "yarn clean && yarn compile && yarn test && yarn lint",
+    "format": "prettier --trailing-comma es5 --single-quote --write 'packages/*/*.js' 'packages/*/!(node_modules)/**/*.js'"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.2.0",
-    "@commitlint/config-conventional": "^7.1.2",
-    "eslint": "^5.7.0",
+    "@commitlint/cli": "7.2.1",
+    "@commitlint/config-conventional": "7.1.2",
+    "eslint": "5.10.0",
     "eslint-config-olx": "olx-global/olx-eslint-config#v2.0.0",
-    "eslint-config-prettier": "^3.1.0",
-    "husky": "^1.1.1",
-    "lerna": "^3.4.1",
-    "lerna-changelog": "^0.8.0",
-    "prettier": "^1.14.3",
-    "pretty-quick": "^1.7.0"
+    "eslint-config-prettier": "3.3.0",
+    "husky": "1.2.1",
+    "lerna": "3.6.0",
+    "lerna-changelog": "0.8.2",
+    "prettier": "1.15.3",
+    "pretty-quick": "1.8.0"
   },
   "repository": {
     "type": "git",

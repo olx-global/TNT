@@ -12,22 +12,18 @@
     "create.js"
   ],
   "dependencies": {
-    "@babel/core": "^7.1.0",
-    "@babel/plugin-external-helpers": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/plugin-proposal-decorators": "^7.1.2",
-    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-transform-destructuring": "^7.1.2",
-    "@babel/plugin-transform-flow-strip-types": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/runtime": "^7.1.2",
-    "babel-plugin-macros": "^2.4.2",
-    "babel-plugin-transform-dynamic-import": "^2.1.0"
-  },
-  "publishConfig": {
-    "registry": "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm-local/"
+    "@babel/core": "7.2.0",
+    "@babel/plugin-external-helpers": "7.2.0",
+    "@babel/plugin-proposal-class-properties": "7.2.1",
+    "@babel/plugin-proposal-decorators": "7.2.0",
+    "@babel/plugin-proposal-export-namespace-from": "7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.2.0",
+    "@babel/plugin-proposal-optional-chaining": "7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-transform-destructuring": "7.2.0",
+    "@babel/plugin-transform-flow-strip-types": "7.2.0",
+    "@babel/preset-env": "7.2.0",
+    "babel-plugin-macros": "2.4.2",
+    "babel-plugin-transform-dynamic-import": "2.1.0"
   }
 }
