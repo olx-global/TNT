@@ -26,9 +26,6 @@
     "type": "git",
     "url": "git+https://github.com/olx-global/TNT.git"
   },
-  "publishConfig": {
-    "registry": "https://olx.jfrog.io/olx/api/npm/nc-regional-almea-panamera-npm-local/"
-  },
   "engines": {
     "node": ">=10"
   }
